@@ -6,7 +6,8 @@ app = Flask(__name__)
 @app.route("/palantir", methods=["GET","POST"])
 def palantir():
 	jsonr = pickle.load( open("save.p","rb") )
-	return render_template("palantir_index.html",json=jsonr)
+	print jsonr
+	return render_template("palantir_index.html",json=jsonify(jsonr).data)
 
 @app.route("/palantir/gate",methods=["GET","POST"])
 def gate():
@@ -28,3 +29,7 @@ def add():
 		return render_template("palantir_index.html",json=jsonr)
 	else:
 		return render_template("palantir_add.html")
+
+
+if __name__ == '__main__':
+	app.run(debug=True)
