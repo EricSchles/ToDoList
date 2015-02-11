@@ -2,4 +2,19 @@
 I1
 S'Financial Data into Palantir'
 p1
+sI2
+S'waaa'
+p2
+sI3
+Vagain
+p3
+sI4
+Vagain
+p4
+sI5
+Vnew
+p5
+sI6
+Vnew
+p6
 s.
